@@ -1,0 +1,16 @@
+server:
+  port: 8050
+
+spring:
+  liquibase:
+    change-log: classpath:/db/changelog/master.xml
+  datasource:
+    url: jdbc:mysql://localhost:3306/eproduct?createDatabaseIfNotExist=true&serverTimezone=UTC
+    username: root
+    password: root
+
+  jpa:
+    show-sql: true
+    hibernate:
+      dialect: org.hibernate.dialect.MySQL55Dialect
+
