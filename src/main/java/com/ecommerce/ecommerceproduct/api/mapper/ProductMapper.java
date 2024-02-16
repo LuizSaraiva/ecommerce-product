@@ -1,5 +1,6 @@
 package com.ecommerce.ecommerceproduct.api.mapper;
 
+import com.ecommerce.ecommerceproduct.api.mapper.dto.ProductEventDto;
 import com.ecommerce.ecommerceproduct.api.mapper.dto.ProductRequest;
 import com.ecommerce.ecommerceproduct.api.mapper.dto.ProductResponse;
 import com.ecommerce.ecommerceproduct.domain.model.Product;
@@ -18,5 +19,7 @@ public interface ProductMapper {
     List<Product> listProductDtoToDomain(List<ProductRequest> productRequests);
 
     List<ProductResponse> listProductDomainToResponseDto(List<Product> products);
+
+    ProductEventDto productDomainToEventDto(Product product);
 
 }

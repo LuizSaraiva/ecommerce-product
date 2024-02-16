@@ -11,7 +11,7 @@ public class ProductRequest {
     @NotBlank
     private String description;
 
-    private boolean status;
+    private boolean status = true ;
     @NotNull
     @NotBlank
     private String package_sale;

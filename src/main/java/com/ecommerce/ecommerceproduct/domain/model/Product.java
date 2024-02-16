@@ -35,7 +35,7 @@ public class Product {
 
     @Column(name = "status")
     @JsonIgnoreProperties
-    private boolean status = true;
+    private boolean status;
 
     @Column(name = "package_sale")
     private String package_sale;

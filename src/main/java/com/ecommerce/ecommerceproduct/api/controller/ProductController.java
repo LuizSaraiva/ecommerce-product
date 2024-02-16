@@ -71,7 +71,7 @@ public class ProductController implements ProductControllerApi{
 
         BeanUtils.copyProperties(productRequest, product);
 
-        Product productSave = productService.saveProduct(product);
+        Product productSave = productService.updateProduct(product);
         ProductResponse productResponse = productMapper.productDomainToResponseDto(productSave);
         log.info("Response product updated: {}", productResponse);
         return ResponseEntity.ok(productResponse);

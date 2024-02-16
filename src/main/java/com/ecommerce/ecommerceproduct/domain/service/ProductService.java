@@ -11,7 +11,8 @@ public interface ProductService {
     List<Product> getAllProducts();
     Product getProductById(UUID id);
     Product saveProduct(Product product);
-
     void updateStatusProduct(boolean status, UUID id);
+
+    Product updateProduct(Product product);
 
 }
