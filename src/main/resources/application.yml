@@ -10,7 +10,7 @@ spring:
     password: root
 
   jpa:
-    show-sql: true
+    show-sql: false
     hibernate:
       dialect: org.hibernate.dialect.MySQL55Dialect
 
